@@ -3,7 +3,7 @@
     Dim PasswordUsuario As String
     Private Sub BtnCrearNuevoUsuario_Click(sender As Object, e As EventArgs) Handles BtnCrearNuevoUsuario.Click
         'Estas variables deben ser guardadas en BBDD
-        If TxtUsuario.Text IsNot Nothing AndAlso TxtUsuario.Text.Length > 2 Then
+        If TxtUsuario.Text <> "" AndAlso TxtUsuario.Text.Length > 2 Then
 
             UsuarioNombre = TxtUsuario.Text
         Else
