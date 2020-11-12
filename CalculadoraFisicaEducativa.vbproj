@@ -86,6 +86,12 @@
     <Compile Include="FNuevoUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormConfirmacionNuevoUsuario.Designer.vb">
+      <DependentUpon>FormConfirmacionNuevoUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfirmacionNuevoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FSeleccionMateria.Designer.vb">
       <DependentUpon>FSeleccionMateria.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FNuevoUsuario.resx">
       <DependentUpon>FNuevoUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfirmacionNuevoUsuario.resx">
+      <DependentUpon>FormConfirmacionNuevoUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

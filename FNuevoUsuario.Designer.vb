@@ -32,7 +32,6 @@ Partial Class FNuevoUsuario
         '
         'LBienvenidaUsu
         '
-
         Me.LBienvenidaUsu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBienvenidaUsu.ForeColor = System.Drawing.Color.Red
         Me.LBienvenidaUsu.Location = New System.Drawing.Point(30, 32)
@@ -44,7 +43,6 @@ Partial Class FNuevoUsuario
         '
         'LblNombreNuevoUsu
         '
-
         Me.LblNombreNuevoUsu.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblNombreNuevoUsu.Location = New System.Drawing.Point(37, 97)
         Me.LblNombreNuevoUsu.Name = "LblNombreNuevoUsu"
@@ -58,7 +56,7 @@ Partial Class FNuevoUsuario
         Me.TxtUsuario.Location = New System.Drawing.Point(219, 94)
         Me.TxtUsuario.MaxLength = 255
         Me.TxtUsuario.Name = "TxtUsuario"
-        Me.TxtUsuario.Size = New System.Drawing.Size(455, 20)
+        Me.TxtUsuario.Size = New System.Drawing.Size(455, 23)
         Me.TxtUsuario.TabIndex = 2
         Me.TxtUsuario.Tag = ""
         Me.TxtUsuario.Text = "Longitud mínima: 3 caracteres"
@@ -75,7 +73,6 @@ Partial Class FNuevoUsuario
         '
         'LblNuevaContrasenia
         '
-
         Me.LblNuevaContrasenia.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblNuevaContrasenia.Location = New System.Drawing.Point(37, 173)
         Me.LblNuevaContrasenia.Name = "LblNuevaContrasenia"
@@ -92,7 +89,6 @@ Partial Class FNuevoUsuario
         Me.BtnCrearNuevoUsuario.Size = New System.Drawing.Size(465, 110)
         Me.BtnCrearNuevoUsuario.TabIndex = 5
         Me.BtnCrearNuevoUsuario.Text = "Confirmar creación de nuevo usuario"
-
         '
         'FNuevoUsuario
         '
