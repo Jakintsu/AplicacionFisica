@@ -41,9 +41,9 @@ Partial Class FormPortada
         'BtnAcceso
         '
         Me.BtnAcceso.BackColor = System.Drawing.Color.Transparent
-        Me.BtnAcceso.Font = New System.Drawing.Font("Microsoft PhagsPa", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAcceso.ForeColor = System.Drawing.Color.Transparent
-        Me.BtnAcceso.Location = New System.Drawing.Point(150, 361)
+        Me.BtnAcceso.Font = New System.Drawing.Font("Microsoft PhagsPa", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte), True)
+        Me.BtnAcceso.ForeColor = System.Drawing.Color.Black
+        Me.BtnAcceso.Location = New System.Drawing.Point(147, 204)
         Me.BtnAcceso.Name = "BtnAcceso"
         Me.BtnAcceso.Size = New System.Drawing.Size(465, 60)
         Me.BtnAcceso.TabIndex = 2
