@@ -22,11 +22,16 @@ Partial Class FMovimientos1D
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.LblInformativo = New System.Windows.Forms.Label()
         Me.LblEspacio1D = New System.Windows.Forms.Label()
         Me.LblVelocidad = New System.Windows.Forms.Label()
         Me.LblAceleracion = New System.Windows.Forms.Label()
         Me.LblTiempo = New System.Windows.Forms.Label()
+        Me.InfoEspacio = New System.Windows.Forms.ToolTip(Me.components)
+        Me.InfoVelocidad = New System.Windows.Forms.ToolTip(Me.components)
+        Me.InfoAceleracion = New System.Windows.Forms.ToolTip(Me.components)
+        Me.InfoTiempo = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'LblInformativo
@@ -93,6 +98,8 @@ Partial Class FMovimientos1D
         Me.Controls.Add(Me.LblVelocidad)
         Me.Controls.Add(Me.LblEspacio1D)
         Me.Controls.Add(Me.LblInformativo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.HelpButton = True
         Me.Name = "FMovimientos1D"
         Me.Text = "Conceptos del movimiento en una dimensión"
         Me.ResumeLayout(False)
@@ -105,4 +112,8 @@ Partial Class FMovimientos1D
     Friend WithEvents LblVelocidad As Label
     Friend WithEvents LblAceleracion As Label
     Friend WithEvents LblTiempo As Label
+    Friend WithEvents InfoEspacio As ToolTip
+    Friend WithEvents InfoVelocidad As ToolTip
+    Friend WithEvents InfoAceleracion As ToolTip
+    Friend WithEvents InfoTiempo As ToolTip
 End Class

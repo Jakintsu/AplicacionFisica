@@ -42,7 +42,11 @@ Public Class FNuevoUsuario
             TxtContrasenia.Text = ""
 
         End If
+        If IsNotTextNull(TxtContrasenia.Text.Trim()) AndAlso CheckWhiteSpace(TxtContrasenia.Text.Trim()) Then
+            MessageBox.Show("No puede haber espacios en blanco en la contraseña")
+            TxtContrasenia.Text = ""
 
+        End If
         If IsNotTextNull(TxtContrasenia.Text.Trim()) AndAlso TxtContrasenia.Text.Trim().Length < 5 Then
             MessageBox.Show("La contraseña no cumple la longirud mínima (6 caracteres)")
             TxtContrasenia.Text = ""
@@ -57,58 +61,7 @@ Public Class FNuevoUsuario
     End Sub
 
 
-    Private Function DatosValidos(NombreUsuario As String, Password As String)
-        If NombreUsuario <> "" AndAlso NombreUsuario <> Nothing AndAlso Password <> "" AndAlso Password <> Nothing Then
 
-
-            Return NombreUsuario.Length > 2 And Password.Length > 5
-
-        End If
-        Return False
-    End Function
-    'Metodos de comprobación para contraseña y usuario
-    Private Function CheckNoUpperCase(ByVal Password As String) As Boolean
-        Dim PatronMayus As String = "[A-Z]"
-        Dim RegularExpress As New Regex(PatronMayus, RegexOptions.ExplicitCapture)
-
-        Dim Coincidencia As MatchCollection = RegularExpress.Matches(Password)
-
-        If Coincidencia.Count = 0 Then
-            Return True
-        Else
-            Return False
-        End If
-    End Function
-
-    Private Function CheckNoNumbers(ByVal Password As String) As Boolean
-        Dim PatronNumeros As String = "[\d]"
-        Dim RegularExpress As New Regex(PatronNumeros, RegexOptions.ExplicitCapture)
-
-        Dim Coincidencia As MatchCollection = RegularExpress.Matches(Password)
-
-        If Coincidencia.Count = 0 Then
-            Return True
-        Else
-            Return False
-        End If
-    End Function
-
-    Private Function CheckNoLowerCase(ByVal Password As String) As Boolean
-        Dim PatronMinus As String = "[a-z]"
-        Dim RegularExpress As New Regex(PatronMinus, RegexOptions.ExplicitCapture)
-
-        Dim Coincidencia As MatchCollection = RegularExpress.Matches(Password)
-
-        If Coincidencia.Count = 0 Then
-            Return True
-        Else
-            Return False
-        End If
-    End Function
-
-    Private Function IsNotTextNull(ByVal Texto As String) As Boolean
-        Return Texto <> "" AndAlso Texto <> Nothing
-    End Function
 
 
 End Class
