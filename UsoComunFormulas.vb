@@ -72,4 +72,7 @@ Module UsoComunFormulas
             Return True
         End If
     End Function
+    Public Function FormatNumbersWith4Decimals(ByVal Numero As Double) As String
+        Return Format(Numero, "##,##0.0000")
+    End Function
 End Module
