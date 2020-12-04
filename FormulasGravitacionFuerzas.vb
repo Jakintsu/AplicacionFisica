@@ -1,5 +1,4 @@
 ﻿Module FormulasGravitacionFuerzas
-    Private Const ACELERACION_GRAVEDAD_TIERRA As Double = 9.81
     Public Function CalculoLeyHooke(ByVal ConstanteMuelle As Double, ByVal LongitudInicial As Double, ByVal LongitudFinal As Double) As Double
         Dim CambioLongitud As Double = LongitudFinal - LongitudInicial
         Return ConstanteMuelle * CambioLongitud

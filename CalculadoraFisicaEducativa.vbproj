@@ -121,6 +121,8 @@
     <Compile Include="FormulasGravitacionFuerzas.vb" />
     <Compile Include="FormulasPresion.vb" />
     <Compile Include="ConstantesFisica.vb" />
+    <Compile Include="FormulasEnergia.vb" />
+    <Compile Include="UnidadesSI.vb" />
     <Compile Include="UsoComunFormulas.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

@@ -27,6 +27,7 @@
 
     Public Const VOLUMEN_MOLAR As Double = 22.4
 
+    Public Const DECIMETRO_CUBICO_LITROS = 1
 
     Public Const VELOCIDAD_LUZ_VACIO As Double = 299792458
 
@@ -42,7 +43,27 @@
 
     Public Const ACELERACION_GRAVEDAD_LUNA As Double = 1.62
 
+    Public Const METROS_KILOMETRO As Integer = 1000
 
+    Public Const METROS_PULGADA As Double = 0.0254
+
+    Public Const METROS_PIE As Double = 0.3048
+
+    Public Const METROS_MILLA As Double = 1609.34
+
+    Public Const METROS_YARDA As Double = 0.9144
+
+    Public Const METROS_MILLA_NAUTICA As Double = 1852
+
+    Public Const SEGUNDOS_HORA As Double = 3600
+
+    Public Const SEGUNDOS_MINUTO As Double = 60
+
+    Public Const KILOGRAMOS_LIBRA As Double = 0.45392
+
+    Public Const KILOGRAMOS_TONELADA As Double = 1000
+
+    Public Const KILOGRAMOS_ONZA As Double = 0.0283495
 
 
 End Module
